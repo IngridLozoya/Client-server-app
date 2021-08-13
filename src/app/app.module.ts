@@ -8,6 +8,13 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { RiboonComponent } from './shared/riboon/riboon.component';
+//import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +23,17 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeaderComponent,
+    FooterComponent,
+    LogInComponent,
+    RegisterComponent,
+    RiboonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
