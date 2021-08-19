@@ -15,7 +15,7 @@ export class UsersService {
    }
 
    getUsers(){
-     return this.http.get<UserResult>("https://git.heroku.com/ingrid-clientserver.git")
+     return this.http.get<UserResult>("https://ingrid-clientserver.herokuapp.com/")
    }
 
 
